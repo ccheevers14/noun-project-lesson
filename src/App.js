@@ -1,9 +1,11 @@
 import './App.scss';
+import RecentPosts from './components/RecentPosts';
 
 function App() {
   return (
     <div className="App">
-     hello Timo
+     <RecentPosts />
+
     </div>
   );
 }
