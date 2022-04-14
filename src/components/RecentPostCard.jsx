@@ -1,6 +1,6 @@
 import React from 'react'
 
-function RecentPostCard({title, imgSrc, linkTitle, linkPath}) {
+function RecentPostCard({title, imgSrc, linkTitle, linkPath, hasSvg}) {
   return (
     <article className='recent-post-card'>
       <div className='recent-post-card__img-box'>
@@ -16,8 +16,9 @@ function RecentPostCard({title, imgSrc, linkTitle, linkPath}) {
         target="_blank"
         className='recent-post-card__link'
        >
-          {linkTitle}
+        {linkTitle}
       </a>
+      
     </article>
   )
 }

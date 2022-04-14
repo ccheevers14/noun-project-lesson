@@ -1,4 +1,4 @@
-import React from 'react'
+
 import RecentPostCard from './RecentPostCard';
 
 function RecentPosts() {
