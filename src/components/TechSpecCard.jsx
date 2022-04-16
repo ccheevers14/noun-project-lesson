@@ -1,10 +1,9 @@
 import React from 'react'
 import {FaApple, FaSlack, FaWindows, FaGoogle} from 'react-icons/fa'
 
-function TechSpecCard({linkPath, icon, title, description, noSvg, hasSvg }) {
+function TechSpecCard({linkPath, icon, title, description, hasSvg}) {
   return (
     <div className='tech-spec-card'>
-
       <a 
         href={linkPath}
         target='_blank'
@@ -20,9 +19,9 @@ function TechSpecCard({linkPath, icon, title, description, noSvg, hasSvg }) {
           {description}
         </p>
 
-        {noSvg && (<div>
+        {!hasSvg && (
           <p className='tech-spec-card__no-svg'>Learn More</p>
-        </div>)}
+        )}
 
         {hasSvg && (<div className='tech-spec-card__has-svg'>
           <FaApple />
@@ -30,7 +29,6 @@ function TechSpecCard({linkPath, icon, title, description, noSvg, hasSvg }) {
           <FaWindows color='rgb(127, 186, 0)'/>
           <FaGoogle color='rgb(66, 133, 244)'/>
         </div>)}
-
       </a>
     </div>
   )

@@ -10,7 +10,7 @@ function TechSpecs() {
       icon: <FaDollarSign />,
       title: 'Pricing & Licenses',
       description: 'All images available as free downloads. Purchase a royalty-free license to support artists and get more options.',
-      noSvg: true,
+      hasSvg: false,
     },
     {
       id: 1,
@@ -26,11 +26,9 @@ function TechSpecs() {
       icon: <FaPlug />,
       title: 'API',
       description: 'Access the entire icon collection via our REST API. Reliably supports growth stage to enterprise clients. ',
-      noSvg: true,
+      hasSvg: false,
     },
   ]
-
-
 
   return (
     <section className='tech-specs'>      
@@ -43,7 +41,6 @@ function TechSpecs() {
           title={item.title}
           description={item.description}
           hasSvg={item.hasSvg}
-          noSvg={item.noSvg}
         />
       ))}
       </div>
